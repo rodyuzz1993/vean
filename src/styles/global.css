@@ -1,0 +1,2602 @@
+@font-face {
+  font-family: "Arimo";
+  src: url("/font/Arimo-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arvo";
+  src: url("/font/Arvo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+section, picture, img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  color: #252223;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arvo", serif;
+}
+
+footer {
+  background-color: #dfdfdf38;
+  border-top: 2px solid black;
+}
+.footer-group a:hover, .nav-link:hover {
+  background: inherit;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  transition: 0.6s;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* ========== BASE ========== */
+html {
+  font-size: 16px;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 767px) {
+  small {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+  }
+
+  h6 {
+    font-size: 1rem; /* 16px */
+  }
+
+  h5 {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  h4 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  #que-hacemos .tarjetas h3 {
+      font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+}
+
+/* ========== DESKTOP ========== */
+@media (min-width: 768px) {
+  small {
+    font-size: 0.8rem; /* 13px */
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+  }
+
+  h6 {
+    font-size: 1.05rem;
+  }
+
+  h5 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  h4 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  h3 {
+    font-size: 1.75rem; /* 28px */
+  }
+  #que-hacemos .ramos h3 {
+      font-size: 0.75rem;
+  }
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+  #centros-comerciales h2 {
+      font-size: 4rem;
+  }
+  h1 {
+    font-size: 5rem; /* 48px */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.banner figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  width: 100%;
+  padding: 48px;
+  top: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+picture {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 0px 48px;
+    margin: 48px auto;
+  }
+
+  .banner img {
+    height: calc(100dvh - 138px);
+    filter: brightness(0.7);
+  }
+
+  .banner:hover img {
+    filter: brightness(0.9);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    height: calc(100dvh - 122px);
+  }
+
+  section {
+    padding: 0px 24px;
+    margin: 48px auto;
+  }
+}
+
+
+
+figure {
+  margin: 0;
+}
+
+.banner {
+  margin: 0px;
+  max-width: 1920px;
+  position: relative;
+}
+
+.banner figure {
+  position: relative;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  justify-content: center;
+}
+
+hr {
+  width: 90%;
+  margin: 0px auto;
+}
+
+
+.container.politicas {
+  margin: 0px auto;
+  max-width: 1200px;
+}
+@media (min-width: 768px){
+  #terminos-condiciones {
+    padding: 48px;
+  }
+}
+@media (max-width: 768px){
+  #terminos-condiciones {
+    padding: 12px;
+  }
+}
+.politicas .section {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 48px;
+}
+
+.fa-brands,
+.fab {
+  font-family: "Font Awesome 6 Brands";
+  font-size: 20px;
+}
+
+footer small {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 24px;
+}
+
+
+header img {
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+/* HEADER STYLE*/
+.site-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #252223;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .site-header img {
+    order: 2;
+  }
+
+  .site-header .btn {
+    order: 1;
+  }
+
+  .mobile-nav {
+    order: 0;
+  }
+
+  .site-header {
+    flex-wrap: wrap-reverse;
+    padding: 16px;
+    justify-content: space-around;
+    gap: 14px 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header {
+    padding: 24px;
+    justify-content: space-between;
+    gap: 0px 24px;
+  }
+}
+
+.desktop-nav ul,
+.mobile-nav__menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mobile-nav__toggle {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.mobile-nav__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-nav__menu {
+  position: absolute;
+  top: 100%;
+  left: 12px;
+  width: min(280px, 90vw);
+  border-style: solid;
+  border-width: 1px;
+  padding: 1rem;
+  border-radius: 12px;
+  z-index: 2;
+  filter: drop-shadow(2px 2px 1px #252223);
+  background: white;
+  z-index: 5;
+  color: black;
+}
+
+.mobile-nav__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  position: relative;
+  outline-width: 3px;
+  outline-color: inherit;
+  outline-style: solid;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+    width: stretch;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav__toggle {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.mobile-nav__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.icon-menu,
+.icon-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+.mobile-nav[open] .icon-menu {
+  display: none;
+}
+
+.mobile-nav[open] .icon-close {
+  display: inline-flex;
+}
+
+
+/* FOOTER STYLE */
+@media (min-width: 768px) {
+
+  .top-footer img,
+  details.footer-group {
+    width: calc(30vw - 16px);
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .top-footer,
+  .top-footer .nav {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .top-footer img,
+  details.footer-group {
+    padding: 0px 10px;
+  }
+}
+
+.footer-group__toggle h3 {
+  display: inline;
+}
+
+.top-footer img {
+  object-fit: contain;
+  object-position: right;
+}
+
+.top-footer .nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  flex-wrap: wrap-reverse;
+}
+
+
+
+.footer-group__toggle {
+  text-align: center;
+}
+
+
+
+.footer-group a,
+.nav-link {
+  position: relative;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.footer-group a::after,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  z-index: -2;
+  display: block;
+}
+
+
+.footer-group a:hover::after,
+.nav-link:hover::after {
+  display: none;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  top: 0px;
+  width: 0px;
+  z-index: -2;
+  display: block;
+  transition: 0.5s;
+  border-radius: 12px;
+}
+
+.btn, .btn:hover:after {
+  border-radius: 12px;
+}
+
+
+.btn::after {
+  background: #ec641c;
+}
+
+.btn:hover:after {
+  background: #0f7fbd;
+}
+
+.btn {
+  color: white;
+  z-index: 2;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  position: relative;
+  width: fit-content;
+}
+
+h1::after, h2::after, h3::after{
+  content: "";
+  position: absolute;
+  width: 0px;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+}
+h1::after, h2::after{
+  height: 6px;
+}
+
+h3::after {
+  height: 3px;
+}
+
+h1::after, h3::after{
+  right: 20%;
+}
+h2::after {
+  left: 20%;
+}
+
+section:hover h1::after, section:hover h2::after, section:hover h3::after {
+  width: 60%;
+  transition: 1s;
+}
+
+h3::after {
+  background: #252223;
+}
+h2::after {
+  background: #ec641c;
+}
+h1::after {
+  background: #0f7fbd;
+}
+
+
+.grupo-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 4px;
+}
+
+.grupo-input:has(input[type="checkbox"], textarea) {
+  min-width: 100%;
+  width: fit-content;
+}
+
+form .grupo-abajo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .grupo-arriba {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+label {
+  left: 10px;
+  position: absolute;
+  top: -12px;
+  background: white;
+  padding: 0px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 680px;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  margin: 24px auto;
+  padding: 24px 16px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 3px lightgray);
+  background: white;
+}
+
+select,
+input::placeholder,
+textarea::placeholder {
+  color: gray;
+}
+
+select:valid {
+  color: #252223;
+}
+
+form .preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+form .preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.aceptar-terminos {
+  font-size: 0.8em;
+  margin-left: 20px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #252223;
+  color: white;
+  border: 0;
+  line-height: inherit;
+}
+
+.aceptar-terminos:hover {
+  filter: invert(1);
+  outline: 1px solid;
+}
+
+input,
+select,
+textarea {
+  padding: 14px 10px;
+  border-radius: 5px;
+  border-color: #252223;
+  border-width: 1px;
+  border-style: solid;
+
+}
+
+label.checkbox {
+  position: unset;
+  padding: 0;
+}
+
+.grupo-input:has(input:focus) label,
+.grupo-input:has(select:focus) label,
+.grupo-input:has(textarea:focus) label {
+  filter: drop-shadow(2px 2px 1px gray);
+  font-size: 0.7rem;
+}
+
+.grupo-input:has(input[type="checkbox"]) label {
+  font-size: inherit;
+  filter: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .grupo-input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grupo-input {
+    width: 100%;
+  }
+}
+
+.modal-terminos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal-contenido-terminos {
+  background: #fff;
+  padding: 0px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+button.cerrar {
+    background: red;
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    border: 3px solid black;
+}
+#mantenimiento-integral > figure > picture img {
+  min-width: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+button.enviar {
+  padding: 10px;
+  border: 0;
+  filter: drop-shadow(3px 3px 1px lightgray);
+  border-radius: 8px;
+  background: #f4f4f4;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0s;
+  width: 300px;
+  margin: 0px auto;
+}
+
+button.enviar:hover {
+  filter: drop-shadow(1px 1px 1px gray);
+  transition: 0s;
+}
+
+button.enviar i.fa-solid.fa-paper-plane {
+  position: absolute;
+  left: 10px;
+  transform: rotate(45deg);
+}
+
+button.enviar:hover i.fa-solid.fa-paper-plane {
+  animation: vueloZigzag 2s linear forwards;
+}
+
+@keyframes vueloZigzag {
+  0% {
+    left: 10px;
+    top: 0;
+  }
+
+  20% {
+    left: 80px;
+    top: -20px;
+  }
+
+  40% {
+    left: 140px;
+    top: 35px;
+  }
+
+  60% {
+    left: 200px;
+    top: -20px;
+  }
+
+  80% {
+    left: 240px;
+    top: 35px;
+  }
+
+  100% {
+    left: 270px;
+    top: 10px;
+  }
+}
+
+
+
+.image-carousel-section img {
+  object-fit: contain;
+}
+
+.image-carousel-section article {
+  display: flex;
+  width: auto;
+  overflow: auto;
+  padding: 22px;
+  scrollbar-width: none;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.image-carousel-section article picture {
+  flex: 0 0 auto;
+}
+
+.image-carousel-section article::-webkit-scrollbar {
+  display: none;
+}
+
+.image-carousel-section [data-carousel-dots] {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-carousel-section [data-carousel-dots][hidden] {
+  display: none;
+}
+
+.image-carousel-section [data-carousel-dot] {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 999px;
+  background: #d9d9d9;
+  cursor: pointer;
+}
+
+.image-carousel-section [data-carousel-dot][aria-current="true"] {
+  width: 24px;
+  background: #000;
+}
+
+
+
+
+
+
+
+
+
+.carruselReviews {
+  position: relative;
+  padding: 64px 24px;
+  overflow: hidden;
+}
+
+.carruselReviews__title {
+  text-align: center;
+  margin: 0 0 42px;
+}
+
+.carruselReviews article {
+  width: 100%;
+  padding: 20px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.carruselReviews article::-webkit-scrollbar {
+  display: none;
+}
+
+.carruselReviews__item {
+  box-sizing: border-box;
+}
+
+.carruselReviews__review {
+  margin: 0 0 28px;
+}
+
+.carruselReviews__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+}
+
+.carruselReviews__author picture,
+.carruselReviews__author img {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.carruselReviews__author img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.carruselReviews__caption h3,
+.carruselReviews__caption p {
+  margin: 0;
+}
+
+.carruselReviews__controls {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.carruselReviews__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+
+  background: #f2f2f2;
+  color: #f25c05;
+
+  cursor: pointer;
+  pointer-events: auto;
+
+  transform: translateY(-50%);
+}
+
+.carruselReviews__arrow--prev {
+  left: 24px;
+}
+
+.carruselReviews__arrow--next {
+  right: 24px;
+}
+
+.carruselReviews__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .carruselReviews {
+    padding: 44px 20px;
+  }
+
+  .carruselReviews__controls {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    pointer-events: auto;
+  }
+
+  .carruselReviews__arrow {
+    position: static;
+    transform: none;
+  }
+}
+
+
+section {
+  position: relative;
+  overflow: hidden;
+  max-width: 1500px;
+}
+
+
+
+#portafolio {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  background-color: #fbf9f7;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+#portafolio figure {
+  position: relative;
+  width: stretch;
+}
+
+#portafolio figure img {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  bottom: -100px;
+  max-width: 1200px;
+}
+
+#portafolio figcaption {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: stretch;
+}
+#portafolio figcaption::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -25px;
+    width: 50px;
+    background: #252223;
+    z-index: 0;
+}
+#portafolio small {
+  position: absolute;
+  z-index: 3;
+  right: 0px;
+  top: 0px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border-bottom: 5px solid;
+}
+#portafolio > picture {
+    justify-content: space-between;
+    width: auto;
+    z-index: 1;
+}
+
+  #portafolio, #portafolio > picture, #portafolio > picture img {
+    min-height: calc(100dvh - 84px);
+  }
+
+  strong {
+    color: #0f7fbd;
+}
+
+    #antecedentes .textos p:first-child {
+        text-align: end;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+@media (min-width: 768px) {
+  #que-hacemos .ramos > picture {
+    max-width: 500px;
+    min-width: 400px;
+    width: 100%;
+  }
+  #portafolio figcaption {
+    padding: 24px 48px 150px;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  #que-hacemos .proyectos {
+    justify-content: center;
+  }
+  #que-hacemos .tarjetas figure {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #que-hacemos .ramos > picture {
+    max-width: 100%;
+    width: auto;
+  }
+  #portafolio > picture  img{
+    object-fit: cover;
+  }
+  #portafolio > picture {
+    max-width: 100px;
+  }
+  #portafolio figcaption {
+    padding: 24px 30px 24px 12px;
+    gap: 50px;
+  }
+  #portafolio h2 {
+    font-size: 1.3rem;
+  }
+}
+  
+
+#antecedentes {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px 0;
+  align-items: center;
+}
+
+#antecedentes .textos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#antecedentes .imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#antecedentes .linea-tiempo {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-top: 3px solid #0f7fbd;
+  justify-content: space-around;
+  position:relative;
+}
+
+#antecedentes .linea-tiempo picture::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 5px solid #0f7fbd;
+    border-radius: 50%;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+}
+
+#antecedentes .imagenes > picture img {
+  width: 100%;
+  height: auto;
+}
+
+#antecedentes .imagenes > picture {
+    justify-content: center;
+}
+
+#antecedentes .linea-tiempo picture {
+    width: auto;
+    position: relative;
+}
+
+#plantas-industriales .imagenes-lista {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+}
+
+#plantas-industriales {
+    max-width: 100%;
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+  #antecedentes .linea-tiempo img {
+    height: 100px;
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  #que-hacemos .tarjetas {
+    justify-content: center;
+  }
+  #que-hacemos .ramos {
+    flex-direction: column;
+  }
+  #antecedentes .linea-tiempo img {
+    height: 50px;
+    width: fit-content;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #antecedentes .linea-tiempo {
+    margin: 24px;
+  }
+  #antecedentes .imagenes > picture img {
+    max-width: 50%;
+  }
+  #antecedentes .textos {
+    max-width: 50%;
+  }
+  #antecedentes {
+    padding-right: 0;
+  }
+  #hoteleria .imagenes {
+    grid-template-rows: 1fr 24px 1fr;
+    grid-template-columns: 1fr 24px 1fr;
+    width: 50%;
+  }
+  #centros-comerciales {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #hoteleria .imagenes {
+    grid-template-rows: 1fr 12px 1fr;
+    grid-template-columns: 1fr 12px 1fr;
+    width: 100%;
+  }
+  #hoteleria {
+    flex-direction: column;
+  }
+  #que-hacemos .tarjetas figure {
+    justify-content: center;
+  }
+  #antecedentes .linea-tiempo {
+    margin: 0px;
+  }
+  #antecedentes {
+    flex-wrap: wrap-reverse;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+
+#mision-vision-politica {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+
+#mision-vision-politica .textos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  background-color: #fdfdfd;
+}
+
+#mision-vision-politica .cards {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  gap: 24px 48px;
+  max-width: 1500px;
+}
+
+#mision-vision-politica .cards figure {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  background: white;
+}
+
+#mision-vision-politica .cards figcaption {
+  padding: 0px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#mision-vision-politica .textos div {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    max-width: 800px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    gap: 24px;
+}
+
+#mision-vision-politica .textos picture {
+    width: auto;
+}
+
+#mision-vision-politica .textos picture img {
+    object-fit: cover;
+}
+
+@media (min-width: 1024px){
+  #mision-vision-politica .cards figure {
+    flex: 1;
+  }
+  #mision-vision-politica .cards {
+    margin: -70px auto 24px;
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 1024px){
+  #mision-vision-politica .cards img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #mision-vision-politica .cards figure {
+    width: 100%;
+  }
+  #mision-vision-politica .cards {
+    margin: -70px auto 24px;
+    flex-wrap: wrap;
+    padding: 0 24px;
+  }
+}
+
+
+#que-hacemos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#que-hacemos .proyectos {
+  display: flex;
+  padding-top: 10px;
+}
+
+@media (min-width: 1500px){
+  #que-hacemos .proyectos img {
+    max-width: 400px;
+  }
+  #que-hacemos .proyectos {
+    gap: 100px;
+  }
+}
+@media (max-width: 1500px){
+  #que-hacemos .proyectos img {
+    max-width: 300px;
+  }
+  #que-hacemos .proyectos {
+    flex-wrap: wrap-reverse;
+    gap: 24px 48px;
+  }
+}
+
+#que-hacemos .proyectos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 24px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  background: white;
+  border-radius: 15px;
+}
+
+#que-hacemos .proyectos img {
+  border-radius: 10px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+}
+
+#que-hacemos .ramos {
+  display: flex;
+  background: white;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  border-radius: 20px;
+  position: relative;
+  padding: 24px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+#que-hacemos .ramos .text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#que-hacemos .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#que-hacemos .tarjetas figure {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  align-items: center;
+}
+
+#que-hacemos .proyectos picture {
+    width: auto;
+}
+
+#que-hacemos .proyectos img {
+    height: auto;
+    object-fit: cover;
+}
+
+#que-hacemos .tarjetas picture {
+    width: auto;
+}
+
+#que-hacemos .ramos > picture img
+{
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+  padding: 20px;
+}
+
+ul.servicios__list {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 12px;
+}
+
+#hoteleria {
+  display: flex;
+  gap: 24px 48px;
+  justify-content: center;
+}
+
+#hoteleria .textos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    filter: drop-shadow(2px 4px 6px lightgray);
+    margin: 24px 0px;
+}
+
+#hoteleria .imagenes {
+  display: grid;
+}
+
+#hoteleria .imagenes img {
+  border-radius: 20px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  height: 100%;
+  object-fit: cover;
+}
+
+#hoteleria .imagenes picture:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+
+#hoteleria .imagenes picture:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#hoteleria .imagenes picture:nth-child(3) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#hoteleria .imagenes picture:nth-child(2) img {
+  height: 100%;
+}
+
+#hoteleria .imagenes {
+  display: grid;
+}
+
+#hoteleria ul.proyectos__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#centros-comerciales figure {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 48px;
+  padding-top: 48px;
+}
+
+#centros-comerciales {
+  display: flex;
+  align-items: baseline;
+  gap: 10px 48px;
+  justify-content: space-evenly;
+  max-width: 1920px;
+}
+
+#centros-comerciales ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-bottom: 120px;
+  font-weight: 500;
+}
+#centros-comerciales picture {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+li.centros-comerciales__item {
+    background-color: #09090999;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 7px;
+    backdrop-filter: blur(9px);
+    position: relative;
+}
+li.centros-comerciales__item::after {
+    content: "";
+    background: black;
+    position: absolute;
+    left: -35px;
+    height: 23px;
+    width: 36px;
+    z-index: -2;
+    top: 4px;
+    border-radius: 7px;
+}
+
+
+#centros-comerciales img {
+    max-width: 1000px;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  #centros-comerciales figcaption {
+      padding: 48px;
+  }
+  #plantas-industriales .titulo-imagen {
+    flex-direction: row-reverse;
+  }
+  #plantas-industriales h2 {
+    width: min-content;
+    padding: 57px;
+    text-align: end;
+  }
+  #plantas-industriales .imagenes-lista {
+    gap: 48px;
+  }
+  #plantas-industriales .titulo-imagen picture {
+    max-width: 800px;
+    width: auto;
+  }
+  #plantas-industriales .imagenes > picture:first-child img {
+    max-width: 600px;
+  }
+  #plantas-industriales .lista-texto {
+    max-width: 390px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #plantas-industriales .lineas-electricas {
+    flex-wrap: wrap;
+  }
+  #plantas-industriales .imagenes {
+    max-width: 336px;
+  }
+  #plantas-industriales .imagenes > picture:first-child img {
+    max-width: 322px;
+    height: 160px;
+  }
+  #plantas-industriales .lineas-electricas {
+    flex-wrap: wrap;
+  }
+}
+
+#gobierno article > picture:nth-child(2) img {
+    border-radius: 50px;
+}
+@media (min-width: 768px) {
+  #gobierno article {
+    padding: 48px;
+    margin: 48px;
+  }
+}
+@media (max-width: 768px) {
+  #gobierno article > picture:nth-child(2) img {
+    margin: 0;
+  }
+  #gobierno article {
+    margin: 12px;
+    padding: 24px;
+    align-items: center;
+  }
+  #plantas-industriales ul.plantas__list {
+      width: 100%!important;
+  }
+  #plantas-industriales .imagenes-lista {
+    flex-direction: column;
+    text-align: center;
+  }
+  #plantas-industriales h3 {
+    padding: 0px!important;
+  }
+  #plantas-industriales .lista-texto {
+    max-width: 100%;
+    align-items: center;
+  }
+  #plantas-industriales .imagenes {
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  #plantas-industriales .titulo-imagen img {
+    width: 100%;
+  }
+  #plantas-industriales .imagenes-lista {
+    gap: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-items: center;
+    justify-content: center !important;
+  }
+  #plantas-industriales h2 {
+    width: 100%;
+    padding: 10px 24px;
+    text-align: center;
+  }
+  #plantas-industriales .titulo-imagen {
+    flex-direction: column;
+  }
+  #centros-comerciales figcaption {
+    padding: 24px;
+  }
+  #centros-comerciales {
+    flex-direction: column;
+    align-items: center;
+  }
+  #plantas-industriales {
+    padding: 0px;
+  }
+}
+
+
+
+
+
+#gobierno picture {
+    width: fit-content;
+}
+
+#plantas-industriales h2 {
+    color: white;
+    height: 100%;
+    background-color: #252223;
+}
+#plantas-industriales .titulo-imagen {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px 48px;
+}
+
+#plantas-industriales .titulo-imagen img {
+    height: auto;
+    max-width: 600px;
+}
+
+#plantas-industriales .lineas-electricas picture {
+    width: auto;
+}
+
+#plantas-industriales .imagenes-lista {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+#plantas-industriales .lista-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: end;
+}
+
+#plantas-industriales ul.plantas__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  border-radius: 15px;
+  padding: 24px;
+  width: fit-content;
+}
+
+
+#plantas-industriales h3 {
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+#plantas-industriales picture {
+    justify-content: center;
+}
+
+#gobierno > picture {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#gobierno > picture img {
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+#gobierno article > picture img {
+    height: 50px;
+    margin: 20px;
+    outline: 10px solid white;
+    border-radius: 12px;
+}
+
+#plantas-industriales li.plantas__item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid lightgray;
+}
+
+#plantas-industriales li.plantas__item:first-child {
+  border-top: 0px;
+}
+
+#plantas-industriales .imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: min-content;
+}
+
+#plantas-industriales .lineas-electricas {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+#plantas-industriales .lineas-electricas figure {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+#plantas-industriales .lineas-electricas figcapion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#plantas-industriales .imagenes img {
+  border-radius: 12px;
+  outline: 10px solid white;
+  object-fit: cover;
+}
+
+#gobierno {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1920px;
+}
+
+#gobierno article {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 3px lightgray);
+  background: #ffffff7a;
+}
+
+#gobierno article img {
+  margin: 20px 0px;
+}
+
+#gobierno figure.gobierno-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 5px 25px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 3px lightgray);
+  background: #ffffff;
+}
+
+#gobierno figure.gobierno-card img {
+  margin: 10px 0px;
+  min-width: 30px;
+    object-fit: contain;
+}
+
+#desarrollos-verticales {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#desarrollos-verticales .desarrollos-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: white;
+  padding: 24px 48px;
+  border-radius: 24px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  margin: 12px;
+  width: stretch;
+}
+
+#desarrollos-verticales .desarrollos-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#desarrollos-verticales .desarrollos-card figcaption ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#desarrollos-verticales .desarrollos-card figcaption li {
+  padding: 10px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+#desarrollos-verticales .desarrollos-card img {
+  border-radius: 12px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+}
+
+#desarrollos-verticales>picture img {
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px){
+  #desarrollos-verticales {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 1024px){
+  #desarrollos-verticales {
+    gap: 24px;
+    padding: 6px!important;
+  }
+  #desarrollos-verticales .desarrollos-card {
+    margin: 0px!important;
+    padding: 24px 12px;
+  }
+  #desarrollos-verticales .desarrollos-card figcaption li {
+    min-width: 200px;
+  }
+
+
+}
+
+#tiendas-de-autoservicios {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+#tiendas-de-autoservicios article {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+}
+
+#tiendas-de-autoservicios > picture {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  justify-content: end;
+}
+
+#tiendas-de-autoservicios > picture img {
+    object-fit: contain;
+}
+
+#tiendas-de-autoservicios figure {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+#tiendas-de-autoservicios figure picture {
+    width: fit-content;
+}
+
+#tiendas-de-autoservicios .sorianas img, #tiendas-de-autoservicios figure img {
+  object-fit: contain;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+}
+
+#tiendas-de-autoservicios figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 512px;
+}
+
+#tiendas-de-autoservicios .sorianas {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tiendas-de-autoservicios .sorianas picture, #tiendas-de-autoservicios figure picture {
+      width: auto;
+}
+
+#tiendas-de-autoservicios .lista {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: #ffffffe6;
+  border-radius: 20px;
+  box-shadow: 3px 2px 4px 3px rgba(203, 203, 203, 0.7);
+  max-width: 501px;
+  width: auto;
+}
+
+#tiendas-de-autoservicios .lista li.soriana__item {
+  padding: 5px;
+  min-width: 300px;
+  background: #ffffff4a;
+  border-bottom: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
+  border-radius: 19px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 600px) {
+  #hospitales .infox, #hospitales > picture {
+    width: 50%!important;
+  }
+  li.hospitales__item {
+    font-size: 12px;
+  }
+  #hospitales p {
+    font-size: 14px;
+  }
+  #hospitales .infox img {
+    height: 180px;
+    border-radius: 10px;
+  }
+  #hospitales h2 {
+    font-size: 1.3rem;
+  }
+  #hospitales {
+    gap: 12px!important;
+    padding: 12px;
+  }
+  #aeropuertos .contenido > picture img {
+    height: 240px;
+    margin: auto;
+  }
+  #aeropuertos .intro {
+    gap: 10px!important;
+  }
+  #aeropuertos .intro div h3 {
+    font-size: 15px!important;
+  }
+  #aeropuertos {
+    flex-direction: column;
+  }
+  #aeropuertos .intro img {
+    height: 250px;
+    max-width: 100%;
+    width: 100dvw;
+    object-position: center;
+  }
+  #aeropuertos .aeropuerto-card {
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  #fraccionamientos ul.fraccionamientos__list {
+    gap: 18px 24px;
+    padding: 0px 48px 48px 96px;
+  }
+  #fraccionamientos figure {
+    gap: 48px;
+  }
+  #aeropuertos .contenido div {
+    padding: 24px 48px;
+  }
+  #tiendas-de-autoservicios > picture img {
+    height: 550px;
+  }
+  #proyectos-destacados figure {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 700px) {
+    #proyectos-destacados h2 {
+      margin: auto;
+    }
+    #proyectos-destacados figure {
+        gap: 12px;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+  #fraccionamientos {
+    padding: 0px;
+  }
+  #fraccionamientos ul.fraccionamientos__list {
+    gap: 12px;
+    padding: 12px;
+  }
+  #fraccionamientos img {
+      height: 150px;
+  }
+  #fraccionamientos h2 {
+    font-size: 16px;
+    padding-right: 12px;
+  }
+  #fraccionamientos figure {
+    gap: 12px;
+  }
+  #aeropuertos .aeropuerto-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #aeropuertos .contenido div {
+    padding: 12px;
+  }
+  #tiendas-de-autoservicios > picture img {
+    height: 600px;
+    object-fit: cover;
+  }
+  #tiendas-de-autoservicios {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 24px auto;
+    padding: 20px;
+  }
+  #tiendas-de-autoservicios h2 {
+    margin: 0 auto;
+  }
+}
+
+#aeropuertos {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin: 0;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+#aeropuertos .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: #1f1e1e;
+  color: white;
+  padding: 48px;
+  border-top-right-radius: 40px;
+  height: 100%;
+  align-items: center;
+}
+
+#aeropuertos .intro picture {
+    justify-content: center;
+}
+
+#aeropuertos .intro div {
+  gap: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#aeropuertos .intro div h3 {
+    font-size: 24px;
+}
+
+#aeropuertos img {
+    object-fit: cover;
+}
+
+#aeropuertos picture {
+    width: auto;
+}
+
+#aeropuertos .aeropuerto-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+  background: white;
+  filter: drop-shadow(4px 4px 4px lightgray);
+  border-radius: 8px;
+}
+
+#aeropuertos .contenido div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#aeropuertos .intro img {
+  border-radius: 20px;
+}
+
+#fraccionamientos {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+#fraccionamientos figure {
+  display: flex;
+  align-items: center;
+}
+
+#fraccionamientos h2 {
+  margin-bottom: 24px;
+}
+
+#fraccionamientos picture {
+  width: fit-content;
+}
+
+#fraccionamientos img {
+  border-bottom-right-radius: 30px;
+}
+
+#fraccionamientos ul.fraccionamientos__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fraccionamientos .fraccionamientos__item {
+    width: auto;
+    padding: 7px 20px;
+    background-color: #0f7fbd;
+    color: white;
+    border-radius: 8px;
+}
+
+#hospitales {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+#hospitales .infox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#hospitales .infox figure {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#hospitales .infox .hospitales__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+}
+#hospitales picture {
+    width: 100%;
+    justify-content: center;
+}
+#hospitales .infox img {
+  border-radius: 30px;
+  filter: drop-shadow(2px 4px 6px lightgray);
+}
+
+#hospitales picture img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#usos-mixtos {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#usos-mixtos .infox div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#usos-mixtos .infox ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#usos-mixtos .infox li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+#bim-revit,
+#bim-revit figure,
+#bim-revit figcaption {
+  position: relative;
+  z-index: 2;
+}
+
+#bim-revit>figure>picture {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  filter: opacity(0.5);
+}
+
+#bim-revit h2 {
+  margin-bottom: 20px;
+}
+
+#bim-revit .tipos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#bim-revit .tipos .dato-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#bim-revit .tipos .dato-card {
+  background: #ffffff0a;
+  padding: 12px;
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-radius: 24px;
+}
+h3.dato-card__title {
+    font-size: 18px;
+    padding: 0 12px 12px;
+}
+#bim-revit .textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    background: #ffffff0a;
+    padding: 12px;
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-radius: 24px;
+}
+#bim-revit .tipos picture {
+    justify-content: center;
+}
+#bim-revit>figure>figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 24px 0;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#proyectos-destacados figure {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.proyectos-destacados__content p {
+  margin: 24px 0px;
+}
+
+.proyectos-destacados__list li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid lightgray;
+}
+
+#proyectos-destacados figure>picture img {
+  border-radius: 30px;
+}
+
+#mantenimiento-integral .mantenimiento__content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 12px;
+}
+
+#mantenimiento-integral p {
+  margin: 24px 0px;
+}
+
+.mantenimiento__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  filter: drop-shadow(2px 4px 6px lightgray);
+  border-radius: 15px;
+  padding: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.mantenimiento-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+.mantenimiento-card picture {
+    justify-content: center;
+}
+#usos-mixtos .infox {
+    display: flex;
+    gap: 24px 48px;
+    padding: 0px 48px;
+    justify-content: center;
+    background: white;
+    filter: drop-shadow(2px 4px 6px lightgray);
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+#usos-mixtos p {
+  text-align: center;
+}
+
+#usos-mixtos img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+  #mantenimiento-integral > figure > picture img {
+    height: 300px;
+    max-width: 500px;
+    width: 100%;
+  }
+  #mantenimiento-integral .mantenimiento__content {
+    flex-direction: column-reverse;
+  }
+  #usos-mixtos img {
+    animation: moverImagen 10s ease-in-out infinite alternate;
+    height: 300px;
+  }
+  #usos-mixtos .infox div {
+    font-weight: 700;
+  }
+  #usos-mixtos .infox {
+    flex-direction: column;
+    text-align: center;
+  }
+  #usos-mixtos .infox ul {
+    gap: 8px;
+  }
+}
+@media (min-width: 768px){
+  #bim-revit>figure>figcaption {
+    height: 600px;
+  }
+  #usos-mixtos img {
+    animation: moverImagenVertical 10s ease-in-out infinite alternate;
+    height: 400px;
+  }
+  #usos-mixtos .infox ul {
+    gap: 20px;
+  }
+  #usos-mixtos h2 {
+    font-size: 4rem;
+  }
+  #usos-mixtos p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #usos-mixtos .infox div {
+    max-width: 700px;
+  }
+}
+
+
+#hospitales > picture img, #desarrollos-verticales > picture img, #portafolio > picture img, #fraccionamientos img, #proyectos-destacados figure > picture:first-child img{
+  object-position: right;
+  animation: moverImagen 8s ease-in-out infinite alternate;
+  object-fit: cover;
+}
+#proyectos-destacados figure > picture:first-child {
+    width: auto;
+    height: 600px;
+    overflow: hidden;
+}
+#proyectos-destacados figure > picture:nth-child(2) img {
+    border-radius: 0px;
+}
+#proyectos-destacados figure > picture:nth-child(2) {
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+    right: 0;
+    object-fit: cover;
+    bottom: 0;
+}
+#proyectos-destacados .proyectos-destacados__content {
+    padding: 20px;
+    background: #ffffff5c;
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+}
+#proyectos-destacados figure > picture:first-child img {
+    height: auto;
+}
+
+@keyframes moverImagen {
+  0% {
+    object-position: right;
+  }
+  
+  50% {
+    object-position: center;
+  }
+
+  100% {
+    object-position: left;
+  }
+}
+
+  @keyframes moverImagenVertical {
+    0% {
+      object-position: top;
+    }
+    
+    50% {
+      object-position: center;
+    }
+  
+    100% {
+      object-position: bottom;
+    }
+  }
+
+

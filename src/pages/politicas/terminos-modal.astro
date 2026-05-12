@@ -1,0 +1,121 @@
+---
+import PolicyElement from "../../snippetsFormPoliticas/PolicyElement.astro";
+import { site } from "../../data/site";
+
+const termsSections = [
+  {
+    title: "VEAN COORDINADORA",
+    html: `
+      <p>
+        <strong>POLÍTICAS DE LA EMPRESA</strong><br />
+        Versión vigente: 04 de mayo de 2026
+      </p>
+    `,
+  },
+  {
+    title: "1. Política de Calidad",
+    html: `
+      <p>
+        En VEAN Coordinadora nos comprometemos a entregar proyectos y obras electromecánicas
+        con los más altos estándares de calidad, garantizando la seguridad y el correcto
+        funcionamiento de las instalaciones.
+        <br /><br />
+        Buscamos la mejora continua de nuestros procesos y la plena satisfacción de nuestros clientes.
+      </p>
+    `,
+  },
+  {
+    title: "2. Política de Servicio al Cliente",
+    html: `
+      <p>
+        Nuestra relación con el cliente se basa en la transparencia, la comunicación oportuna
+        y el cumplimiento de compromisos.
+        <br /><br />
+        Nos esforzamos por:
+        <br /><br />
+        Responder cualquier solicitud de información o cotización en un plazo máximo de 48 horas hábiles.<br />
+        Mantener al cliente informado en cada etapa del proyecto o la obra.<br />
+        Atender y resolver inconformidades de manera rápida y profesional.
+      </p>
+    `,
+  },
+  {
+    title: "3. Política de Seguridad",
+    html: `
+      <p>
+        VEAN Coordinadora cumple estrictamente con las normas de seguridad nacionales e internacionales
+        aplicables a cada proyecto.
+        <br /><br />
+        Todo nuestro personal y subcontratistas están obligados a respetar los protocolos de seguridad
+        en obra, utilizando en todo momento el equipo de protección personal requerido.
+      </p>
+    `,
+  },
+  {
+    title: "4. Política de Sustentabilidad",
+    html: `
+      <p>
+        Estamos comprometidos con el cuidado del medio ambiente.
+        <br /><br />
+        Ofrecemos soluciones de ahorro de energía y aprovechamiento eficiente del agua,
+        promoviendo proyectos sustentables que reduzcan el impacto ambiental de las instalaciones
+        que diseñamos y ejecutamos.
+      </p>
+    `,
+  },
+  {
+    title: "5. Política de Uso del Sitio Web",
+    html: `
+      <p>
+        El sitio web de VEAN Coordinadora es un canal informativo y de contacto.
+        <br /><br />
+        Los datos que usted comparte a través del formulario de contacto serán tratados de forma
+        confidencial y conforme a nuestro Aviso de Privacidad.
+        <br /><br />
+        Nos reservamos el derecho de actualizar el contenido del sitio en cualquier momento sin previo aviso.
+      </p>
+    `,
+  },
+  {
+    title: "6. Política de No Discriminación",
+    html: `
+      <p>
+        VEAN Coordinadora ofrece sus servicios sin distinción de raza, género, religión,
+        orientación sexual, condición socioeconómica o cualquier otra característica.
+        <br /><br />
+        Nos comprometemos a tratar a todos nuestros clientes, proveedores y colaboradores
+        con respeto e igualdad.
+      </p>
+    `,
+  },
+];
+---
+
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos y Condiciones de {site.brandName}</title>
+  </head>
+
+  <body>
+    <main class="politicas-modal">
+      <PolicyElement
+        id="terminos-condiciones-modal"
+        class="politicas-modal__content"
+
+        headingLevel="h2"
+
+        title={`Términos y Condiciones de ${site.brandName}`}
+        titleClass="politicas-modal__title"
+
+        sectionClass="section"
+        subtitleClass="politicas-modal__subtitle"
+        textClass="politicas-modal__text"
+
+        sections={termsSections}
+      />
+    </main>
+  </body>
+</html>

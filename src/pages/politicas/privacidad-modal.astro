@@ -1,0 +1,156 @@
+---
+import PolicyElement from "../../snippetsFormPoliticas/PolicyElement.astro";
+import { site } from "../../data/site";
+
+const policySections = [
+  {
+    title: "VEAN COORDINADORA",
+    html: `
+      <p>
+        <strong>AVISO DE PRIVACIDAD</strong><br />
+        Fecha de última actualización: 04 de mayo de 2026
+      </p>
+    `,
+  },
+  {
+    title: "I. Identidad y Domicilio del Responsable",
+    html: `
+      <p>
+        VEAN Coordinadora (en adelante "el Responsable"), con domicilio en Camelias #108A,
+        Col. Jardines de Jerez, León, Gto., es la persona moral responsable del tratamiento
+        de sus datos personales conforme a lo establecido en la Ley Federal de Protección
+        de Datos Personales en Posesión de los Particulares (LFPDPPP) y su Reglamento.
+      </p>
+    `,
+  },
+  {
+    title: "II. Datos Personales que se Recaban",
+    html: `
+      <p>
+        A través de nuestro sitio web y formularios de contacto podemos recabar los siguientes datos personales:
+        <br /><br />
+        Nombre completo<br />
+        Correo electrónico<br />
+        Número de teléfono o celular<br />
+        Empresa u organización a la que pertenece<br />
+        Descripción del proyecto o servicio de interés<br />
+        Ciudad o estado de ubicación del proyecto
+        <br /><br />
+        No recabamos datos personales sensibles (datos patrimoniales, financieros, de salud u orientación sexual)
+        a través de nuestros canales digitales.
+      </p>
+    `,
+  },
+  {
+    title: "III. Finalidades del Tratamiento",
+    html: `
+      <p>
+        <strong>Finalidades primarias (necesarias para la relación jurídica):</strong><br />
+        Atender y dar seguimiento a sus solicitudes de información, cotización o contacto.<br />
+        Elaborar propuestas técnicas y comerciales de proyectos electromecánicos.<br />
+        Gestionar la relación contractual derivada de la prestación de servicios de ingeniería.<br />
+        Cumplir con obligaciones legales y fiscales aplicables.
+        <br /><br />
+        <strong>Finalidades secundarias (no necesarias, puede oponerse):</strong><br />
+        Envío de información sobre nuevos servicios, proyectos o actualizaciones de la empresa.<br />
+        Invitaciones a eventos, ferias o exposiciones del sector.
+        <br /><br />
+        Si no desea que sus datos sean utilizados para las finalidades secundarias, puede manifestarlo enviando
+        un correo a VEAN.GERENCIA@GMAIL.COM con el asunto "Oposición finalidades secundarias".
+      </p>
+    `,
+  },
+  {
+    title: "IV. Transferencias de Datos",
+    html: `
+      <p>
+        Sus datos personales no serán transferidos a terceros sin su consentimiento previo,
+        salvo en los siguientes casos permitidos por la LFPDPPP:
+        <br /><br />
+        Cuando la transferencia sea necesaria para la ejecución de un contrato celebrado entre usted y el Responsable.<br />
+        Cuando sea requerida por autoridad competente en ejercicio de sus atribuciones.<br />
+        A subcontratistas o proveedores que actúen como encargados del tratamiento bajo instrucción del Responsable.
+      </p>
+    `,
+  },
+  {
+    title: "V. Derechos ARCO",
+    html: `
+      <p>
+        Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse (derechos ARCO) al tratamiento de sus datos personales.
+        <br /><br />
+        Para ejercer estos derechos, deberá enviar una solicitud a través de los medios de contacto disponibles
+        en la sección de Contacto del sitio web.
+        <br /><br />
+        La solicitud deberá incluir: nombre completo, descripción clara del derecho que desea ejercer y,
+        en su caso, documentos que acrediten su identidad.
+        <br /><br />
+        El Responsable responderá en un plazo máximo de 20 días hábiles.
+        <br /><br />
+        Los datos de contacto para ejercer estos derechos se encuentran disponibles en la sección de Contacto del sitio web.
+      </p>
+    `,
+  },
+  {
+    title: "VI. Uso de Cookies y Tecnologías de Rastreo",
+    html: `
+      <p>
+        Nuestro sitio web puede utilizar cookies y tecnologías similares para mejorar la experiencia de navegación,
+        analizar el tráfico y personalizar contenidos.
+        <br /><br />
+        Usted puede configurar su navegador para rechazar o eliminar cookies; sin embargo,
+        esto podría afectar la funcionalidad del sitio.
+      </p>
+    `,
+  },
+  {
+    title: "VII. Cambios al Aviso de Privacidad",
+    html: `
+      <p>
+        El Responsable se reserva el derecho de modificar el presente Aviso de Privacidad.
+        <br /><br />
+        Cualquier cambio será notificado a través de nuestro sitio web, indicando la fecha de actualización.
+        Le recomendamos consultarlo periódicamente.
+      </p>
+    `,
+  },
+  {
+    title: "VIII. Contacto",
+    html: `
+      <p>
+        Para cualquier duda, comentario o solicitud relacionada con el presente Aviso de Privacidad,
+        puede contactarnos a través de los medios de contacto disponibles en nuestro sitio web.
+      </p>
+    `,
+  },
+];
+---
+
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviso de privacidad de {site.brandName}</title>
+  </head>
+
+  <body>
+    <main class="politicas-modal">
+      <PolicyElement
+        id="aviso-privacidad-modal"
+        class="politicas-modal__content"
+
+        headingLevel="h2"
+
+        title={`Aviso de privacidad de ${site.brandName}`}
+        titleClass="politicas-modal__title"
+
+        sectionClass="section"
+        subtitleClass="politicas-modal__subtitle"
+        textClass="politicas-modal__text"
+
+        sections={policySections}
+      />
+    </main>
+  </body>
+</html>

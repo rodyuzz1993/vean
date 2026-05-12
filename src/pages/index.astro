@@ -1,0 +1,1308 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+
+import CardElement from "../snippets/CardElement.astro";
+import ImagenResponsive from "../snippets/ImagenResponsive.astro";
+import ListElement from "../snippets/ListElement.astro";
+
+
+
+import Formulario from "../components/Formulario.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout>
+  <Header />
+
+  <main class="container">
+
+    <section id="portafolio">
+      <figure>
+        <ImagenResponsive
+          srcDesktop="/media/portafolio-2.webp?width=1200"
+          srcMobile="/media/portafolio-2.webp?width=1200"
+          alt="PORTAFOLIO VEAN COORDINADORA"
+          title="PORTAFOLIO VEAN COORDINADORA"
+          width="1920"
+          height="auto"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>
+          <h1>
+          PORTAFOLIO
+          </h1>
+          <h2>
+          Proyectos y Ejecución de Obras Electromecánicas
+          </h2>
+          <small>
+          2021
+          </small>
+        </figcaption>
+      </figure>
+      <ImagenResponsive
+        srcDesktop="/media/portafolio-1.webp?width=1200"
+        srcMobile="/media/portafolio-1.webp?width=1200"
+        alt="PORTAFOLIO VEAN COORDINADORA"
+        title="PORTAFOLIO VEAN COORDINADORA"
+        width="400"
+        height="600"
+        priority="high"
+        loading="eager"
+        decoding="async"
+      />
+    </section>
+
+    <section id="antecedentes">
+      <article class="textos">
+        <p>
+          22 AÑOS DE EXPERIENCIA
+        </p>
+        <h2>
+          ANTECEDENTES
+        </h2>
+        <p>
+          Como empresa de proyectos desde el año 1999  formamos PSD Proyectos Supervisión y Dirección en  Obras Electromecánicas en la cual realizamos más  de 340 proyectos en 10 años, tiempo en el cual  nuestra política nos ha llevado a mejorar  continuamente. 
+        </p>
+        <p>
+          Aprovechando la experiencia obtenida en la elaboración de proyectos  y el compromiso de los profesionales que la integraban y nos  transformamos en CIE Consultoría en ingeniería electromecánica S.C.  en mayo de 2010. Con la premisa de que nada cambia solo se  transforma, ofrecemos alternativas de ahorro de energía  aprovechamiento de agua y mejoras para proyectos sustentables y  comprometidos con el medio ambiente. 
+        </p>
+        <p>
+          Buscando un crecimiento y evolución nos renovamos para convertirnos en <strong>VEAN Coordinadora</strong> en Febrero de 2013,  manteniendo nuestro compromiso con nuestros clientes en proyectos y obras, buscando siempre la satisfacción del cliente ofreciendo ser competitivos y comprometidos.
+        </p>
+      </article>
+      <article class="imagenes">
+        <ImagenResponsive
+          srcDesktop="/media/antecedentes.webp?media=1500"
+          alt="ANTECEDENTES"
+          title="ANTECEDENTES"
+          width="600"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="linea-tiempo">
+          <ImagenResponsive
+            srcDesktop="/media/psd.webp?media=500"
+            alt="PSD"
+            title="PSD"
+            width="200"
+            height="200"
+            loading="lazy"
+            decoding="async"
+          />
+          <ImagenResponsive
+            srcDesktop="/media/cie.webp?media=500"
+            alt="CIE"
+            title="CIE"
+            width="200"
+            height="200"
+            loading="lazy"
+            decoding="async"
+          />
+          <ImagenResponsive
+            srcDesktop="/media/logo-light.webp?media=500"
+            alt="VEAN"
+            title="VEAN"
+            width="200"
+            height="200"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </article>
+    </section>
+
+    <section id="mision-vision-politica">
+      <article class="textos">
+      <ImagenResponsive
+        srcDesktop="/media/valores-1.webp?width=600"
+        srcMobile="/media/valores-1.webp?width=600"
+        alt="EDIFICIOS"
+        title="EDIFICIOS"
+        width="600"
+        height="400"
+        loading="lazy"
+        decoding="async"
+      />
+      <div>
+        <h2>
+          NUESTROS VALORES
+        </h2>
+        <h3>
+          Comprometidos con la excelencia, la seguridad y la mejora continua en cada proyecto que desarrollamos.
+        </h3>
+      </div>
+      <ImagenResponsive
+        srcDesktop="/media/valores-2.webp?width=600"
+        srcMobile="/media/valores-2.webp?width=600"
+        alt="CONSTRUCCIÓN"
+        title="CONSTRUCCIÓN"
+        width="600"
+        height="400"
+        loading="lazy"
+        decoding="async"
+      />  
+      </article>
+      <article class="cards">
+        <CardElement
+          id=""
+          class=""
+          srcDesktop="/media/politica-vean.webp?width=600"
+          srcMobile="/media/politica-vean.webp?width=600"
+          alt="POLÍTICA DE CALIDAD"
+          loading="lazy"
+          decoding="async"
+          h3="POLÍTICA DE CALIDAD"
+          p="Satisfacer continuamente al cliente elaborando proyectos de ingenierías y obras a través del esfuerzo y trabajo en equipo, optimizando los recursos para la mejora continúa."
+        />
+        <CardElement
+          id=""
+          class=""
+          srcDesktop="/media/mision-vean.webp?width=600"
+          srcMobile="/media/mision-vean.webp?width=600"
+          alt="MISIÓN"
+          loading="lazy"
+          decoding="async"
+          h3="MISIÓN"
+          p="Hacer llegar a nuestros clientes proyectos ejecutivos y obras elaborados con la más alta calidad que garanticen seguridad y funcionamiento de sus instalaciones buscando siempre la mejora continúa de nuestros servicios."
+        />
+        <CardElement
+          id=""
+          class=""
+          srcDesktop="/media/vision-vean.webp?width=600"
+          srcMobile="/media/vision-vean.webp?width=600"
+          alt="VISIÓN"
+          loading="lazy"
+          decoding="async"
+          h3="VISIÓN"
+          p="Ser una empresa líder en el diseño de proyectos y obras de ingenierías eléctricas y mecánicas que cumplan estrictamente con las normas de diseño y seguridad vigentes nacionales e internacionales, garantizando que producto que brinda VEAN sea seguro y tenga un estándar de calidad."
+        />
+      </article>
+    </section>
+
+    <section id="que-hacemos">
+      <article class="proyectos">
+        <ImagenResponsive
+              srcDesktop="/media/Ingenieria-vean.webp?width=800"
+              srcMobile="/media/Ingenieria-vean.webp?width=800"
+              alt="Ingeniero liderando en VEAN"
+              title="Ingeniero liderando en VEAN"
+              width="400"
+              height="400"
+              loading="lazy"
+              decoding="async"
+        />      
+        <div>
+          <h2>
+            INGENIERÍAS
+          </h2>
+          <p>
+            Trabajamos   ofreciendo   la   mejor   calidad   y   servicio en la   realización de proyectos y obras de instalaciones, entre las cuales están: 
+          </p>
+            <ListElement
+              class="servicios__list"
+              listStyleType="none"
+              items={[
+                { html: "Proyectos de Instalaciones Eléctricas en Media y Baja Tensión." },
+                { html: "Proyectos de Instalaciones Hidráulicas." },
+                { html: "Proyectos de Instalaciones Sanitarias." },
+                { html: "Proyectos de Aire Acondicionado." },
+                { html: "Proyectos de Telecomunicaciones." },
+                { html: "Proyectos de Sistemas de Protección Contra Incendio." },
+              ]}
+            />
+        </div>
+      </article>
+      <article class="ramos">
+        <div class="text">
+          <h2>
+            RAMOS
+          </h2>
+          <div class="tarjetas">
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Hotelería"
+                title="Hotelería"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Hotelería</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Centros Comerciales"
+                title="Centros Comerciales"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Centros Comerciales</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Plantas Industriales"
+                title="Plantas Industriales"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Plantas Industriales</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Gobierno"
+                title="Gobierno"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Gobierno</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Desarrollos Verticales"
+                title="Desarrollos Verticales"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Desarrollos Verticales</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Tiendas de Autoservicio"
+                title="Tiendas de Autoservicio"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Tiendas de Autoservicio</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Aeropuertos"
+                title="Aeropuertos"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Aeropuertos</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Fraccionamientos"
+                title="Fraccionamientos"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Fraccionamientos</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Hospitales"
+                title="Hospitales"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Hospitales</h3>
+              </figcaption>
+            </figure>
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Usos Mixtos"
+                title="Usos Mixtos"
+                width="30"
+                height="30"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Usos Mixtos</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+          <ImagenResponsive
+            srcDesktop="/media/ramos-vean.webp?width=800"
+            srcMobile="/media/ramos-vean.webp?width=800"
+            alt="Ramos de ingeniería"
+            title="Ramos de ingeniería"
+            width="800"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+      </article>
+    </section>
+
+    <section id="hoteleria">
+      <article class="imagenes">
+        <ImagenResponsive
+          srcDesktop="/media/hoteleria-vean-1.webp?width=800"
+          srcMobile="/media/hoteleria-vean-1.webp?width=800"
+          alt="HOTELERÍA"
+          title="HOTELERÍA"
+          width="400"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+        <ImagenResponsive
+          srcDesktop="/media/hoteleria-vean-2.webp?width=800"
+          srcMobile="/media/hoteleria-vean-2.webp?width=800"
+          alt="HOTELERÍA"
+          title="HOTELERÍA"
+          width="400"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <ImagenResponsive
+          srcDesktop="/media/hoteleria-vean-3.webp?width=800"
+          srcMobile="/media/hoteleria-vean-3.webp?width=800"
+          alt="HOTELERÍA"
+          title="HOTELERÍA"
+          width="400"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+      </article>
+      <article class="textos">
+      <h2>
+        HOTELERÍA
+      </h2>
+        <ListElement
+        class="proyectos__list"
+        listStyleType="none"
+        items={[
+          { html: "Edificio de Grand Mayan Puerto Peñasco, Son." },
+          { html: "Edificio Grand Bliss Vallarta, Nay." },
+          { html: "Edificio Mayan Palace Acapulco, Gro." },
+          { html: "Infraestructura y alberca techada en Puerto Peñasco, Son." },
+          { html: "Hotel City Express Guadalajara, Jal." },
+          { html: "Hotel City Express Tuxtla, Tuxtla Gutiérrez, Chiap." },
+          { html: "Hotel City Suites Querétaro, Qro." },
+          { html: "Hotel El Cardo, San Miguel de Allende, Gto." },
+          { html: "City Suites Express Querétaro, Qro." },
+          { html: "Hampton – Piedras Negras, Coah." },
+          { html: "Marriot – Silao, Gto." },
+          { html: "Elite Residences Nuevo Vallarta Bahía de Banderas, Nay." },
+          { html: "Hotel Insurgentes Ciudad de México." },
+        ]}
+      />
+      </article>
+    </section>
+
+    <section id="centros-comerciales">
+      <figure>
+        <ImagenResponsive
+          srcDesktop="/media/centro-comercial-vean.webp?width=1000"
+          srcMobile="/media/centro-comercial-vean.webp?width=1000"
+          alt="Centros comerciales"
+          title="Centros comerciales"
+          width="400"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>
+          <h2>
+            CENTROS<br>COMERCIALES
+          </h2>
+        </figcaption>
+      </figure>
+      <ListElement
+        as="ol"
+        class="centros-comerciales__list"
+        itemClass="centros-comerciales__item"
+        items={[
+          { html: "Centro Comercial Comitán, Comitán de Domínguez, Chiap." },
+          { html: "Centro Comercial Espacio Querétaro, Qro." },
+          { html: "Centro Comercial Galerías Guadalajara, Jal." },
+          { html: "Centro Comercial La Piedad, Mich." },
+          { html: "Centro Comercial Plaza Cibeles en Irapuato, Gto." },
+          { html: "Centro Comercial Plaza Pozuelos en Guanajuato, Gto." },
+          { html: "Centro Comercial Plaza San Cristóbal, Chiap." },
+          { html: "Centro Comercial San Juan del Río, Qro." },
+          { html: "Centro Comercial Tyson en Gómez Palacio, Dgo." },
+          { html: "Centro Comercial Uruapan, Mich." },
+          { html: "Plaza del Comercio Salamanca, Gto." },
+          { html: "Polos de Desarrollo del Comercio Ambulante en Irapuato, Gto." },
+          { html: "Centro Comercial Río Verde, SLP." },
+          { html: "Mercado de Pirotecnia San Pablito en Tultepec, Edomex." },
+          { html: "Centro Comercial Insurgentes en Ciudad de México." },
+          { html: "Centro Comercial Distrito Oriente Querétaro, Qro." },
+          { html: "Centro Comercial Ambiente Querétaro, Qro." },
+          { html: "Centro Comercial Vista Hermosa Ciudad de México, CDMX." },
+        ]}
+      />
+    </section>
+
+    <section id="plantas-industriales">
+      <article class="titulo-imagen">
+          <h2>
+            PLANTAS INDUSTRIALES
+          </h2>
+        <ImagenResponsive
+          srcDesktop="/media/plantas-industriales-1.webp?width=2000"
+          srcMobile="/media/plantas-industriales-1.webp?width=2000"
+          alt="Plantas Industriales"
+          title="Plantas Industriales"
+          width="400"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+      </article>
+      <article class="imagenes-lista">
+        <div class="lista-texto">
+          <h3>
+            Hemos realizado líneas Aéreas 115 kv, 13.2 kv y Subestaciones de 115 kv en las siguientes naves industriales:
+          </h3>
+          <ListElement
+            class="plantas__list"
+            listStyleType="none"
+            itemClass="plantas__item"
+            items={[
+              { html: "INNOPACK en León, Gto." },
+              { html: "Porcelanite Querobabi en Hermosillo, Son." },
+              { html: "Porcelanite en San José Iturbide, Gto." },
+              { html: "HIROTAI Automotive Trim en Romita, Gto." },
+              { html: "KASAI Mexicana en León, Gto." },
+              { html: "HFI León, Gto." },
+              { html: "BADER Almacén León, Gto." },
+              { html: "TEPSO Romita, Gto." },
+            ]}
+          />
+        </div>
+        <div class="imagenes">
+          <ImagenResponsive
+            srcDesktop="/media/plantas-industriales-2.webp?width=2000"
+            srcMobile="/media/plantas-industriales-2.webp?width=2000"
+            alt="Naves Industriales"
+            title="Naves Industriales"
+            width="600"
+            height="300"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="lineas-electricas">
+            <figure>
+              <ImagenResponsive
+                srcDesktop="/media/torre-electrica.webp?width=500"
+                srcMobile="/media/torre-electrica.webp?width=500"
+                alt="Icono de torre eléctrica"
+                title="Icono de torre eléctrica"
+                width="50"
+                height="80"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <p>
+                  Soluciones eléctricas con ingeniería de precisión, calidad y cumplimiento normativo.
+                </p>
+                <h3>
+                  INGENIERÍA QUE CONECTA, PROYECTOS QUE TRASCIENDEN.
+                </h3>
+              </figcaption>
+            </figure>
+            <ImagenResponsive
+              srcDesktop="/media/lineas-electricas.webp?width=2000"
+              srcMobile="/media/lineas-electricas.webp?width=2000"
+              alt="Tensión eléctrica"
+              title="Tensión eléctrica"
+              width="600"
+              height="300"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="gobierno">
+      <article>
+        <h2>
+        GOBIERNO
+        </h2>
+        <ImagenResponsive
+          srcDesktop="/media/gobierno-guanajuato.webp?width=500"
+          srcMobile="/media/gobierno-guanajuato.webp?width=500"
+          alt="GOBIERNO DEL ESTADO DE GUANAJUATO"
+          title="GOBIERNO DEL ESTADO DE GUANAJUATO"
+          width="200"
+          height="100"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          srcMobile="/media/planos.webp?width=500"
+          alt="Centro de Seguridad Pública"
+          title="Centro de Seguridad Pública"
+          width="28"
+          height="28"
+          p="Centro de Seguridad Pública Micro Regional (CESEPUM)"
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          srcMobile="/media/planos.webp?width=500"
+          alt="Centro Operativo"
+          title="Centro Operativo"
+          width="28"
+          height="28"
+          p="Centro Operativo SAPAL en León, Gto."
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          srcMobile="/media/planos.webp?width=500"
+          alt="Edificio Municipal"
+          title="Edificio Municipal"
+          width="28"
+          height="28"
+          p="Edificio Municipal de SEG. en Cueramaro, Gto."
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          srcMobile="/media/planos.webp?width=500"
+          alt="Edificio Municipal"
+          title="Edificio Municipal"
+          width="28"
+          height="28"
+          p="Edificio Municipal de SEG. en M. Doblado, Gto."
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          srcMobile="/media/planos.webp?width=500"
+          alt="Transporte"
+          title="Transporte"
+          width="28"
+          height="28"
+          p="Estación de Transferencia Norte del Sistema Integrado de Transporte (SIT) en León, Gto."
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          srcMobile="/media/planos.webp?width=500"
+          alt="Justicia"
+          title="Justicia"
+          width="28"
+          height="28"
+          p="Subprocuraduría de Justicia de Irapuato, Gto."
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+        <ImagenResponsive
+          srcDesktop="/media/gobierno-oaxaca.webp?width=500"
+          srcMobile="/media/gobierno-oaxaca.webp?width=500"
+          alt="OAXACA | CREAR | CONSTRUIR | CRECER"
+          title="OAXACA | CREAR | CONSTRUIR | CRECER"
+          width="200"
+          height="100"
+          loading="lazy"
+          decoding="async"
+        />
+        <CardElement
+          class="gobierno-card"
+          srcDesktop="/media/planos.webp?width=500"
+          alt="DIF/media/planos.webp?width=500"
+          title="DIF"
+          width="28"
+          height="28"
+          p="Casa de Alas DIF del Estado de Oaxaca, Oax."
+          pClass="gobierno-card__text"
+          loading="lazy"
+          decoding="async"
+        />
+      </article>
+      <ImagenResponsive
+        srcDesktop="/media/sapal.webp?width=2500"
+        srcMobile="/media/sapal.webp?width=2500"
+        alt="sapal"
+        title="sapal"
+        width="1000"
+        height="600"
+        loading="lazy"
+        decoding="async"
+      />
+    </section>
+
+    <section id="desarrollos-verticales">
+      <figure class="desarrollos-card">
+        <ImagenResponsive
+          srcDesktop="/media/desarrollo-vertical-1.webp?width=600"
+          srcMobile="/media/desarrollo-vertical-1.webp?width=600"
+          alt="DESARROLLOS VERTICALES"
+          title="DESARROLLOS VERTICALES"
+          width="400"
+          height="220"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption class="desarrollos-card__content">
+          <h2 class="desarrollos-card__title">
+            DESARROLLOS<br />VERTICALES
+          </h2>
+
+          <ListElement
+            class="desarrollos-card__list"
+            listStyleType="none"
+            itemClass="desarrollos-card__item"
+            items={[
+              { html: "Península Vallarta, Nay." },
+              { html: "Icon Vallarta, Nay." },
+              { html: "Cima Real Residencial Jalisco, Jal." },
+              { html: "Central Park Querétaro, Qro." },
+              { html: "Pent-house Torre Kennedy San Luis Potosí, SLP." },
+              { html: "Departamentos NSJ 828 – H4 – Benito Juárez, CDMX." },
+              { html: "IMUVI Desarrollo las américas en León, Gto." },
+              { html: "Torre BASANÍA León, Gto." },
+            ]}
+          />
+        </figcaption>
+      </figure>
+      <ImagenResponsive
+        srcDesktop="/media/desarrollo-vertical-2.webp?width=1500"
+        srcMobile="/media/desarrollo-vertical-2.webp?width=1500"
+        alt="DESARROLLOS VERTICALES"
+        title="DESARROLLOS VERTICALES"
+        width="800"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
+    </section>
+
+    <section id="tiendas-de-autoservicios">
+      <article class="lista">
+        <h2>
+          Proyectos realizados
+        </h2>
+        <ListElement
+          class="soriana__list"
+          listStyleType="none"
+          itemClass="soriana__item"
+          items={[
+            { html: "Soriana Express Álamo en Veracruz, Ver." },
+            { html: "Soriana Express Ducoing en Silao, Gto." },
+            { html: "Soriana Express Jiquilpan, Mich." },
+            { html: "Soriana Express Meneses, CDMX." },
+            { html: "Soriana Express Montemorelos en Montemorelos, NL." },
+            { html: "Soriana Express Pie de la Cuesta en Acapulco, Gro." },
+            { html: "Soriana Express Rosa Morado en Nuevo Vallarta, Nay." },
+            { html: "Soriana Hipermercado Altabrisa en Mérida, Yuc." },
+            { html: "Soriana Hipermercado Ron Batey en Córdoba, Ver." },
+            { html: "Soriana Mercado Casas Grandes en Nuevo Casa Grandes, Chih." },
+            { html: "Soriana Mercado Cd Guzmán, Jal." },
+            { html: "Soriana Súper San Javier en Guanajuato, Gto." },
+            { html: "Soriana Mercado Central Saltillo, Coah." },
+            { html: "Soriana Mercado Comitán de Domínguez, Chis." },
+            { html: "Soriana Mercado Delicias, Chih." },
+            { html: "Soriana Mercado Lerdo, Dgo." },
+            { html: "Soriana Mercado Los Ángeles en Torreón, Coah." },
+            { html: "Soriana Mercado Matamoros, Coah." },
+            { html: "Soriana Mercado Uruapan, Mich." },
+            { html: "Soriana Súper Celaya, Gto." },
+            { html: "Soriana Súper Geranios Baja California." },
+            { html: "Soriana Súper Mieleras, Coah." },
+          ]}
+        />
+      </article>
+      <article>
+        <figure>
+          <ImagenResponsive
+            srcDesktop="/media/soriana.webp?width=500"
+            srcMobile="/media/soriana.webp?width=500"
+            alt="Soriana"
+            title="Soriana"
+            width="400"
+            height="220"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <h2>
+              TIENDAS DE AUTOSERVICIO
+            </h2>
+            <p>
+              Diseño, coordinación y supervisión de proyectos para la construcción y adecuación de tiendas de autoservicio en todo México.
+            </p>
+          </figcaption>
+        </figure>
+        <div class="sorianas">
+          <ImagenResponsive
+            srcDesktop="/media/soriana-hiper.webp?width=500"
+            srcMobile="/media/soriana-hiper.webp?width=500"
+            alt="Soriana Hiper"
+            title="Soriana Hiper"
+            width="400"
+            height="220"
+            loading="lazy"
+            decoding="async"
+          />
+          <ImagenResponsive
+            srcDesktop="/media/soriana-super.webp?width=500"
+            srcMobile="/media/soriana-super.webp?width=500"
+            alt="Soriana Súper"
+            title="Soriana Súper"
+            width="400"
+            height="220"
+            loading="lazy"
+            decoding="async"
+          />
+          <ImagenResponsive
+            srcDesktop="/media/soriana-express.webp?width=500"
+            srcMobile="/media/soriana-express.webp?width=500"
+            alt="Soriana Express"
+            title="Soriana Express"
+            width="400"
+            height="220"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </article>
+      <ImagenResponsive
+        srcDesktop="/media/soriana-coordinacion-vean.webp?width=1500"
+        srcMobile="/media/soriana-coordinacion-vean.webp?width=1500"
+        alt="VEAN coordinación diseños"
+        title="VEAN coordinación diseños"
+        width="1500"
+        height="1500"
+        loading="lazy"
+        decoding="async"
+      />
+    </section>
+
+    <section id="aeropuertos">
+      <article class="intro">
+        <h2>
+          AEROPUERTOS
+        </h2>
+        <div>
+          <h3>
+            ARQUITECTURA
+          </h3>
+          <h3>
+            INGENIERÍA
+          </h3>
+          <h3>
+            INFRAESTRUCTURA
+          </h3>
+        </div>
+        <ImagenResponsive
+          srcDesktop="/media/aeropuerto-2.webp?width=1000"
+          srcMobile="/media/aeropuerto-2.webp?width=1000"
+          alt="Aeropuertos"
+          title="Aeropuertos"
+          width="400"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+      </article>
+      <article class="contenido">
+        <ImagenResponsive
+          srcDesktop="/media/aeropuerto-1.webp?width=1500"
+          srcMobile="/media/aeropuerto-1.webp?width=1500"
+          alt="Aeropuertos"
+          title="Aeropuertos"
+          width="800"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <div>
+          <CardElement
+            class="aeropuerto-card"
+            srcDesktop="/media/planos.webp?width=500"
+            srcMobile="/media/planos.webp?width=500"
+            alt="Terminal de aeropuerto"
+            title="Terminal de aeropuerto"
+            width="42"
+            height="42"
+            p="Terminal de aeropuerto en Puerto Peñasco."
+            pClass="aeropuerto-card__text"
+            loading="lazy"
+            decoding="async"
+          />
+          <CardElement
+            class="aeropuerto-card"
+            srcDesktop="/media/planos.webp?width=500"
+            srcMobile="/media/planos.webp?width=500"
+            alt="Aeropuerto"
+            title="Aeropuerto"
+            width="42"
+            height="42"
+            p="Aeropuerto Tijuana en Baja California. Ampliación Sala Alfa y sala Bravo."
+            pClass="aeropuerto-card__text"
+            loading="lazy"
+            decoding="async"
+          />
+          <CardElement
+            class="aeropuerto-card"
+            srcDesktop="/media/planos.webp?width=500"
+            srcMobile="/media/planos.webp?width=500"
+            alt="Terminal nacional e internacional"
+            title="Terminal nacional e internacional"
+            width="42"
+            height="42"
+            p="Ampliación Terminal nacional e internacional Aeropuerto Guadalajara, Jal."
+            pClass="aeropuerto-card__text"
+            loading="lazy"
+            decoding="async"
+          />
+          <CardElement
+            class="aeropuerto-card"
+            srcDesktop="/media/planos.webp?width=500"
+            srcMobile="/media/planos.webp?width=500"
+            alt="Aeropuerto San José del Cabo"
+            title="Aeropuerto San José del Cabo"
+            width="42"
+            height="42"
+            p="Ampliación Terminal nacional Aeropuerto San Jose del Cabo, BC"
+            pClass="aeropuerto-card__text"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </article>
+    </section>
+
+    <section id="fraccionamientos">
+      <figure>
+        <ImagenResponsive
+          srcDesktop="/media/fraccionamiento.webp?width=1000"
+          srcMobile="/media/fraccionamiento.webp?width=1000"
+          alt="FRACIONAMIENTOS"
+          title="FRACIONAMIENTOS"
+          width="800"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>
+          <h2>
+            FRACIONAMIENTOS
+          </h2>
+        </figcaption>
+      </figure>
+      <ListElement
+        class="fraccionamientos__list"
+        listStyleType="none"
+        itemClass="fraccionamientos__item"
+        items={[
+          { html: "Balcones de Guanajuato" },
+          { html: "Balcones de La Esperanza" },
+          { html: "Balcones de La Joya" },
+          { html: "Balcones De Las Hilamas" },
+          { html: "Brisas del Vergel" },
+          { html: "Búfalo" },
+          { html: "Campestre" },
+          { html: "Colonos San Juan" },
+          { html: "Condominio Residencial" },
+          { html: "Cruz De La Soledad" },
+          { html: "Cruz del Sol" },
+          { html: "El Canelo" },
+          { html: "El Forestal" },
+          { html: "El Juncal" },
+          { html: "Granjas de La Loma" },
+          { html: "San Bernardo" },
+          { html: "Granjas de La Piscina I y II" },
+          { html: "Hacienda de Ibarrilla I Sección" },
+          { html: "Hacienda Santa Teresa" },
+          { html: "La Cañada" },
+          { html: "La Montaña" },
+          { html: "La Moreña" },
+          { html: "La Piedad" },
+          { html: "Las Brisas" },
+          { html: "Las Huertas Primera Sección" },
+          { html: "Las Huertas Segunda Sección" },
+          { html: "Lomas De San Miguel" },
+          { html: "Maravillas" },
+          { html: "Paseos De Miravalle I y II" },
+          { html: "Quinta Villas Irapuato" },
+          { html: "Rancho La Huaracha" },
+          { html: "Residencial Primavera San Francisco" },
+          { html: "Rivera Del Carmen" },
+          { html: "San Bernardino" },
+          { html: "La Valenciana" },
+        ]}
+      />
+    </section>
+
+    <section id="hospitales">
+      <article class="infox ">
+        <figure>
+          <ImagenResponsive
+            srcDesktop="/media/hospitales-1.webp?width=1500"
+            srcMobile="/media/hospitales-1.webp?width=1500"
+            alt="HOSPITALES"
+            title="HOSPITALES"
+            width="800"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <h2>
+              HOSPITALES
+            </h2>
+            <p>
+              Experiencia en proyectos para el sector salud, con enfoque en funcionalidad, seguridad y operación eficiente de espacios hospitalarios.
+            </p>
+          </figcaption>
+        </figure>
+        <ListElement
+          class="hospitales__list"
+          listStyleType="none"
+          itemClass="hospitales__item"
+          items={[
+            { html: "Hospital Pediátrico León, Gto." },
+            { html: "UMF del IMSS de San Diego de la Unión, Gto." },
+            { html: "UMF del IMSS de San Felipe, Gto." },
+            { html: "Instituto Vida León, Gto." },
+          ]}
+        />
+      </article>
+      <ImagenResponsive
+        srcDesktop="/media/hospitales-2.webp?width=1500"
+        srcMobile="/media/hospitales-2.webp?width=1500"
+        alt="HOSPITALES"
+        title="HOSPITALES"
+        width="800"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
+    </section>
+
+    <section id="usos-mixtos">
+      <ImagenResponsive
+        srcDesktop="/media/usos-mixtos.webp?width=2500"
+        srcMobile="/media/usos-mixtos.webp?width=2500"
+        alt="USOS MIXTOS"
+        title="USOS MIXTOS"
+        width="1920"
+        height="500"
+        loading="lazy"
+        decoding="async"
+      />
+      <article class="infox ">
+        <div>
+          <h2>
+            USOS MIXTOS
+          </h2>
+          <p>
+            Proyectos integrales para desarrollos de uso mixto, combinando comercio, servicios y espacios urbanos funcionales.
+          </p>
+        </div>
+          <ListElement
+            class="usos-mixtos__list"
+            listStyleType="none"
+            itemClass="usos-mixtos__item"
+            items={[
+              { html: "Centro Comercial Insurgentes en Ciudad de México" },
+              { html: "Sentura Tlalnepantla, CDMX." },
+              { html: "Foro 4 León, Gto." },
+              { html: "Lexmar Insurgentes León, Gto." },
+              { html: "Bazar Vista Hermosa en Ciudad de México." },
+              { html: "Locales Comerciales El Rosario en León, Gto." },
+            ]}
+          />
+      </article>
+    </section>
+
+    <section id="bim-revit">
+        <figure>
+          <ImagenResponsive
+            srcDesktop="/media/BIM-REVIT.webp?width=2000"
+            srcMobile="/media/BIM-REVIT.webp?width=2000"
+            alt="BIM-REVIT"
+            title="BIM-REVIT"
+            width="1920"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <div class="textos">
+              <h2>
+                BIM-REVIT
+              </h2>
+              <p>
+                En VEAN elaboramos proyectos de ingeniería en Modelado BIM REVIT MEP para aportar una mejor claridad en la parte del conocimiento del proyecto, el hacer un modelo en 3D permite entender la volumetría a construir, además de dar oportunidad de extraer datos de la obra como ubicación, material, medición, dimensiones, entre otros.
+              </p>
+            </div>
+            <div class="tipos">
+              <CardElement
+                class="dato-card"
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Ubicación"
+                title="Ubicación"
+                width="42"
+                height="42"
+                h3="UBICACIÓN"
+                h3Class="dato-card__title"
+                loading="lazy"
+                decoding="async"
+              />
+              <CardElement
+                class="dato-card"
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Material"
+                title="Material"
+                width="42"
+                height="42"
+                h3="MATERIAL"
+                h3Class="dato-card__title"
+                loading="lazy"
+                decoding="async"
+              />
+              <CardElement
+                class="dato-card"
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Medición"
+                title="Medición"
+                width="42"
+                height="42"
+                h3="MEDICIÓN"
+                h3Class="dato-card__title"
+                loading="lazy"
+                decoding="async"
+              />
+              <CardElement
+                class="dato-card"
+                srcDesktop="/media/planos.webp?width=500"
+                srcMobile="/media/planos.webp?width=500"
+                alt="Dimensiones"
+                title="Dimensiones"
+                width="42"
+                height="42"
+                h3="DIMENSIONES"
+                h3Class="dato-card__title"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figcaption>
+        </figure>
+    </section>
+
+    <section id="proyectos-destacados">
+      <figure>
+        <ImagenResponsive
+          srcDesktop="/media/construccion-1.webp?width=1000"
+          srcMobile="/media/construccion-1.webp?width=1000"
+          alt="Proyectos Destacados VEAN"
+          title="Proyectos Destacados VEAN"
+          width="800"
+          height="1200"
+          loading="lazy"
+          decoding="async"
+        />
+        <ImagenResponsive
+          srcDesktop="/media/construccion-2.webp?width=600"
+          srcMobile="/media/construccion-2.webp?width=600"
+          alt="Proyectos Destacados VEAN"
+          title="Proyectos Destacados VEAN"
+          width="800"
+          height="1200"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption class="proyectos-destacados__content">
+            <h2>
+              PROYECTOS<br />
+              <span>DESTACADOS</span>
+            </h2>
+            <p>
+              EXPERIENCIA QUE CONSTRUYE FUTURO
+            </p>
+          <ListElement
+            class="proyectos-destacados__list"
+            listStyleType="none"
+            itemClass="proyectos-destacados__item"
+            items={[
+              { html: "Plaza G100 locales check inn en Silao, Gto." },
+              { html: "Plaza Hilvana en Querétaro, Qro." },
+              { html: "Guardería Plaza G100 en Silao, Gto." },
+              { html: "La Cervecería Plaza G100 en Silao, Gto." },
+              { html: "Fast Food Plaza G100 en Silao, Gto." },
+              { html: "Baños Gimnasio G100 en Silao, Gto." },
+              { html: "Restaurante Manolèette G100 Silao, Gto." },
+              { html: "Plaza G100 en Silao, Gto." },
+              { html: "Clínica Hospital Instituto Vida en León, Gto." },
+              { html: "Torre Capita Notaria No. 5 en Juriquilla, Qro." },
+              { html: "Fraccionamiento la Valenciana Acceso Ito en León, Gto." },
+              { html: "Servicio PanAmericano De Proteccion Complejo León, Gto." },
+              { html: "Locales El Rosario León, Gto." },
+            ]}
+          />
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="mantenimiento-integral">
+      <figure class="mantenimiento__content">
+        <ImagenResponsive
+          srcDesktop="/media/mantenimiento-integral.webp?width=800"
+          srcMobile="/media/mantenimiento-integral.webp?width=800"
+          alt="Mantenimiento Integral"
+          title="Mantenimiento Integral"
+          width="700"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>
+          <h2>
+            MANTENIMIENTO INTEGRAL
+          </h2>
+          <p>
+            VEAN realiza servicios de mantenimiento integral correctivo, reparando las averías que se producen por el uso cotidiano en las instalaciones, reformas parciales o totales de oficinas y locales, así como también realizamos mantenimientos preventivos acordados y organizados para mantener en buen estado las instalaciones de los inmuebles.
+          </p>
+          <div class="mantenimiento__cards">
+            <CardElement
+              class="mantenimiento-card"
+              srcDesktop="/media/tecnico.webp?width=500"
+              srcMobile="/media/tecnico.webp?width=500"
+              alt="Correctivo"
+              title="Correctivo"
+              width="42"
+              height="42"
+              h3="Correctivo"
+              h3Class="mantenimiento-card__title"
+              loading="lazy"
+              decoding="async"
+            />
+            <CardElement
+              class="mantenimiento-card"
+              srcDesktop="/media/tecnico.webp?width=500"
+              srcMobile="/media/tecnico.webp?width=500"
+              alt="Preventivo"
+              title="Preventivo"
+              width="42"
+              height="42"
+              h3="Preventivo"
+              h3Class="mantenimiento-card__title"
+              loading="lazy"
+              decoding="async"
+            />
+            <CardElement
+              class="mantenimiento-card"
+              srcDesktop="/media/tecnico.webp?width=500"
+              srcMobile="/media/tecnico.webp?width=500"
+              alt="Oficinas"
+              title="Oficinas"
+              width="42"
+              height="42"
+              h3="Oficinas"
+              h3Class="mantenimiento-card__title"
+              loading="lazy"
+              decoding="async"
+            />
+            <CardElement
+              class="mantenimiento-card"
+              srcDesktop="/media/tecnico.webp?width=500"
+              srcMobile="/media/tecnico.webp?width=500"
+              alt="Locales"
+              title="Locales"
+              width="42"
+              height="42"
+              h3="Locales"
+              h3Class="mantenimiento-card__title"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        <figcaption>
+      </figure>
+    </section>
+
+    <Formulario />
+
+</main>
+
+  <Footer />
+</BaseLayout>
