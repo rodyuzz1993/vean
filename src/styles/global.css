@@ -1378,7 +1378,7 @@ section {
     width: 100%;
   }
   #mision-vision-politica .cards {
-    margin: -70px auto 24px;
+    margin: -50px auto 24px;
     flex-wrap: wrap;
     padding: 0 24px;
   }
@@ -2493,6 +2493,11 @@ h3.dato-card__title {
 }
 
 @media (max-width: 768px){
+  #mision-vision-politica .textos div {
+    padding-bottom: 80px !important;
+    padding-left: 24px!important;
+    padding-right: 24px!important;
+  }
   #mantenimiento-integral > figure > picture img {
     height: 300px;
     max-width: 500px;
