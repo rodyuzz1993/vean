@@ -3,16 +3,31 @@ import { preguntas, boton } from "../data/formulario";
 ---
 
 <section id="formulario" class="section">
+
   <h2>Formulario</h2>
 
   <form
     name="vean-contacto"
     method="POST"
-    data-netlify="true"
-    netlify
     action={boton[0].paginaGracias}
+    data-netlify="true"
+    netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="form-name" value="vean-contacto" />
+
+    {/* NECESARIO PARA NETLIFY */}
+    <input
+      type="hidden"
+      name="form-name"
+      value="vean-contacto"
+    />
+
+    {/* ANTISPAM */}
+    <p hidden>
+      <label>
+        No llenar:
+        <input name="bot-field" />
+      </label>
+    </p>
 
     <article class="preguntas">
 
@@ -26,6 +41,7 @@ import { preguntas, boton } from "../data/formulario";
             item.type === "tel"
           )
           .map((item, index) => (
+
             <div class="grupo-input">
 
               <label for={`campo-${index}`}>
@@ -40,12 +56,14 @@ import { preguntas, boton } from "../data/formulario";
               />
 
             </div>
+
           ))}
 
         {/* SELECT */}
         {preguntas
           .filter(item => item.type === "select")
           .map((item, index) => (
+
             <div class="grupo-input">
 
               <label for={`campo-select-${index}`}>
@@ -57,7 +75,9 @@ import { preguntas, boton } from "../data/formulario";
                 name={item.name}
                 required={item.required}
               >
+
                 {item.opciones.map((opt, i) => (
+
                   <option
                     value={opt.valor}
                     disabled={i === 0}
@@ -66,10 +86,13 @@ import { preguntas, boton } from "../data/formulario";
                   >
                     {opt.opcion}
                   </option>
+
                 ))}
+
               </select>
 
             </div>
+
           ))}
 
       </div>
@@ -81,6 +104,7 @@ import { preguntas, boton } from "../data/formulario";
         {preguntas
           .filter(item => item.type === "textarea")
           .map((item, index) => (
+
             <div class="grupo-input">
 
               <label for={`campo-textarea-${index}`}>
@@ -94,12 +118,14 @@ import { preguntas, boton } from "../data/formulario";
               ></textarea>
 
             </div>
+
           ))}
 
         {/* CHECKBOX */}
         {preguntas
           .filter(item => item.type === "checkbox")
           .map((item, index) => (
+
             <div class="grupo-input">
 
               <label class="checkbox">
@@ -120,21 +146,30 @@ import { preguntas, boton } from "../data/formulario";
                   class="aceptar-terminos"
                   data-url={item.urlPoliticas}
                 >
-                  <small>{item.textoPolitica}</small>
+                  <small>
+                    {item.textoPolitica}
+                  </small>
                 </button>
 
               </label>
 
             </div>
+
           ))}
 
       </div>
 
       {/* MODAL */}
       <div id="modal-terminos" class="modal-terminos">
+
         <div class="modal-contenido-terminos">
 
-          <button type="button" class="cerrar">✕</button>
+          <button
+            type="button"
+            class="cerrar"
+          >
+            ✕
+          </button>
 
           <iframe
             id="iframe-terminos"
@@ -145,6 +180,7 @@ import { preguntas, boton } from "../data/formulario";
           ></iframe>
 
         </div>
+
       </div>
 
     </article>
@@ -155,31 +191,55 @@ import { preguntas, boton } from "../data/formulario";
     </p>
 
     {/* BOTÓN */}
-    <button type="submit" class="enviar">
+    <button
+      type="submit"
+      class="enviar"
+    >
+
       {boton[0].cta}
+
       <i class="fa-solid fa-paper-plane"></i>
+
     </button>
 
   </form>
+
 </section>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("modal-terminos");
-    const iframe = document.getElementById("iframe-terminos");
+
+    const modal =
+      document.getElementById("modal-terminos");
+
+    const iframe =
+      document.getElementById("iframe-terminos");
 
     document.addEventListener("click", (e) => {
-      const btn = e.target.closest(".aceptar-terminos");
+
+      const btn =
+        e.target.closest(".aceptar-terminos");
 
       if (btn) {
+
         iframe.src = btn.dataset.url;
+
         modal.style.display = "flex";
+
       }
 
-      if (e.target.closest(".cerrar") || e.target === modal) {
+      if (
+        e.target.closest(".cerrar") ||
+        e.target === modal
+      ) {
+
         modal.style.display = "none";
+
         iframe.src = "";
+
       }
+
     });
+
   });
 </script>
